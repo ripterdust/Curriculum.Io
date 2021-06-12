@@ -9,7 +9,7 @@ $DBlue: #21277f;
 $bg: #ecf0f1;
 $bgCard: rgb(236, 240, 241, .5);
 $blackBg: #0f141f;
-
+$green: #2ecc71;
 
 // General settings
 
@@ -441,4 +441,44 @@ nav {
 
 .footer{
     background-color: $blackBg;
+    min-height: 10vh;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .social{
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .links{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 1em;
+            a{
+              color: $LBlue;
+              font-size: 30px;
+
+              &:nth-last-child(1){
+                  color: $green;
+              }
+            }
+
+            
+
+        }
+    }
+
+    .copy{
+        margin-top: 1em;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
 }

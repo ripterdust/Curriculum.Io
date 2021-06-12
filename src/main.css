@@ -362,6 +362,40 @@ nav .content .dropdown:hover .dropdown-content {
 
 .footer {
   background-color: #0f141f;
+  min-height: 10vh;
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .social {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .social .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+}
+.footer .social .links a {
+  color: #2196f3;
+  font-size: 30px;
+}
+.footer .social .links a:nth-last-child(1) {
+  color: #2ecc71;
+}
+.footer .copy {
+  margin-top: 1em;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */
