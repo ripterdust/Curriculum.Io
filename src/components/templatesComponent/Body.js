@@ -1,13 +1,15 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 export const Body = (props) => {
 
-    console.log(props.location)
+    const params = useParams();
+    console.log(params)
+
+
     return (
         <div>
-
-
-            Acá irán los templates
+            Your location is: { params.category }
         </div>
     )
 }

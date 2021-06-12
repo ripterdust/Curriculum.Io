@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Index}  />
-        <Route path='/templates/:category?' component={CategoriesRoutes} />
+        <Route path='/templates' component={CategoriesRoutes} />
 
         <Route component={Error404}  />
       </Switch>

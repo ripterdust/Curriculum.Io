@@ -1,9 +1,8 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
     Route,
     Switch,
-    NavLink
+    // NavLink
 
 } from 'react-router-dom';
 import { Body } from '../components/templatesComponent/Body';
@@ -11,12 +10,11 @@ import { Body } from '../components/templatesComponent/Body';
 export const CategoriesRoutes = () => {
     return (
         <>
-            <Router>
-                Acá irán todos los componentes
-                <Switch>
-                    <Route path="/:category?"  component={ Body }/>
-                </Switch>
-            </Router>
+            Acá irán todos los componentes
+            <Switch>
+            <Route exact path='/' component={Body} />
+            <Route path='/templates/:category' component={Body} />
+            </Switch>
         </>
     )
 }
