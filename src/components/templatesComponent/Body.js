@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { CategoriesList } from './CategoriesList';
 import { HeroCategories } from './HeroCategories';
 import { TemplatesNav } from './TemplatesNav';
 
@@ -11,10 +12,9 @@ export const Body = (props) => {
 
     return (
         <div>
-            
             <HeroCategories category={category} />
             <TemplatesNav />
-            Your location is: { category }
+            <CategoriesList category={category} />
         </div>
     )
 }

@@ -30,6 +30,7 @@ export const TemplatesNav = () => {
                     <i className="lni lni-brush-alt"></i>Creative
                 </NavLink>
             </div>
+            <div className="bar"></div>
         </div>
     )
 }

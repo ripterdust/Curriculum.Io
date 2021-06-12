@@ -383,6 +383,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    .bar{
+        width: 65%;
+        height: 1px;
+        background-color: rgba(0,0,0,.3);
+        margin-top: 3px;
+    }
 
     .elements{
         width: 60%;
