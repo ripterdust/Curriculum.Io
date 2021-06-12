@@ -245,6 +245,8 @@ nav .content .dropdown:hover .dropdown-content {
   align-items: center;
   z-index: 1;
   font-size: 20px;
+  text-transform: capitalize;
+  color: #21277f;
 }
 .mainPage .features .demo .elems .elem::before {
   content: "";

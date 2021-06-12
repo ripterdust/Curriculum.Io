@@ -14,7 +14,7 @@ export const Features = () => {
                     <div className="elem">Easily edit online</div>
                     <div className="elem">Add pre-written phrases</div>
                     <div className="elem">Modern and beautifull desings</div>
-                    <div className="elem">Free</div>
+                    <div className="elem">Its Free</div>
                 </div>
             </div>
         </div>
