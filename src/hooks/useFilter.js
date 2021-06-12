@@ -4,9 +4,11 @@ export const useFilter = ({ data, category }) => {
 
     if(category !== undefined){
         data.map(element => {
-            if(element.category == category){
+            if(element.category === category){
                 list = [...list, element]
+              
             }
+            return ''
         });
     }else{
         list = data;
