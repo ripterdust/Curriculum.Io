@@ -9,11 +9,11 @@ export const CategoriesList = ({ category }) => {
 
     return (
         <div className='listTemplates'>
-            <div className="cards ">
+            <div className="cardList">
                 {
                     list.map((el, i) => (
-                        <div className="card animate__animated animate__fadeIn" key={i} >
-                            <img src={el.img} alt={`Tempalte of ${el.title}`} />
+                        <div className="cardElem" key={i} >
+                            <img src={el.img} alt={`Tempalte of ${i}`} />
                             <div className="text">
                                 <div className="title">
                                     {el.title}

@@ -373,11 +373,14 @@ nav .content .dropdown:hover .dropdown-content {
   justify-content: center;
   align-items: center;
 }
-.listTemplates .cards {
-  width: 70%;
+.listTemplates .cardList {
   margin-top: 2em;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 1em;
+  row-gap: 1em;
 }
-
 .footer {
   background-color: #0f141f;
   min-height: 10vh;
