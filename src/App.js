@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Index}  />
-        <Route path='/templates' component={Template} />
+        <Route path='/templates/:category?' component={Template} />
 
         <Route component={Error404}  />
       </Switch>
