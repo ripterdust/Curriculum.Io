@@ -3,6 +3,7 @@ import { BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
+import { Error404 } from './components/Error404';
 import { Index } from './components/Index';
 import { Template } from './components/Template';
 
@@ -19,6 +20,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Index}  />
         <Route path='/templates' component={Template} />
+
+        <Route component={Error404}  />
       </Switch>
 
     </Router>
