@@ -7,9 +7,7 @@ import { TemplatesNav } from './TemplatesNav';
 export const Body = (props) => {
 
     const { category } = useParams();
-    console.log(category)
-
-
+    
     return (
         <div>
             <HeroCategories category={category} />

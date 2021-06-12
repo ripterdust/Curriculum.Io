@@ -4,7 +4,7 @@ import { useFilter } from '../../hooks/useFilter'
 
 export const CategoriesList = ({ category }) => {
 
-    const [list] = useFilter(data, category);
+    const [list] = useFilter({data, category});
     console.log(list)
     return (
         <div className='listTemplates'>
