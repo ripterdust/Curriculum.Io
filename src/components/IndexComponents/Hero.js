@@ -11,8 +11,10 @@ export const Hero = () => {
                 <div className="subTitle">
                     Use professional field-tested resume templates that follow the exact ‘resume rules’ employers look for. Easy to use and done within minutes - try now for free! 
                 </div>
-                <Link to='/template'>Create my resume</Link>
+                <div className="btn">
+                    <Link to='/templates' className='button' >Create my resume</Link>
                 </div>
+            </div>
         </div>
     )
 }

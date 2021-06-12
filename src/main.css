@@ -165,9 +165,36 @@ nav .content .dropdown:hover .dropdown-content {
   align-items: center;
   flex-direction: column;
 }
+.mainPage .hero .text {
+  width: 55%;
+  text-align: center;
+}
 .mainPage .hero .text .title {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+.mainPage .hero .text .subTitle {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 95%;
+  margin: auto;
+}
+.mainPage .hero .text .btn {
+  margin-top: 2.3em;
+}
+.mainPage .hero .text .btn a {
+  background-color: #2196f3;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 1em 1em;
+  border-radius: 6px;
+}
+.mainPage .hero .text .btn a:active {
+  background: #298ddd;
 }
 
 /*# sourceMappingURL=main.css.map */
