@@ -6,9 +6,9 @@ export const Footer = () => {
             <div className="social">
                 Connect with my social media.
                 <div className="links">
-                    <a href=""><i class="lni lni-facebook-oval"></i></a>
-                    <a href=""><i class="lni lni-linkedin-original"></i></a>
-                    <a href=""><i class="lni lni-whatsapp"></i></a>
+                    <a href="/"><i className="lni lni-facebook-oval"></i></a>
+                    <a href="/"><i className="lni lni-linkedin-original"></i></a>
+                    <a href="/"><i className="lni lni-whatsapp"></i></a>
                 </div>
             </div>
 

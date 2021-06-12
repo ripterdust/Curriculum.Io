@@ -7,7 +7,7 @@ export const TemplatesNav = () => {
                 <NavLink exact to="/templates/" 
                 activeClassName="categoryActive" 
                 className="element">
-                    <i class="lni lni-book"></i>All
+                    <i className="lni lni-book"></i>All
                 </NavLink>
                 <NavLink to="/templates/simple" 
                 activeClassName="categoryActive" 
