@@ -7,8 +7,8 @@ import { Error404 } from './components/Error404';
 import { Index } from './components/Index';
 import { Template } from './components/Template';
 
-import { Navbar } from './components/ui/Navbar'
-
+import { Navbar } from './components/ui/Navbar';
+import { Footer } from './components/ui/Footer';
 // Styles
 import './main.css' 
 
@@ -25,6 +25,8 @@ function App() {
       </Switch>
 
     </Router>
+
+    <Footer/>
   </>
 }
 

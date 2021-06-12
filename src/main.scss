@@ -7,7 +7,8 @@ $LBlue: #2196f3;
 $blue: #298ddd;
 $DBlue: #21277f;
 $bg: #ecf0f1;
-$green: #25b869;
+$bgCard: rgb(236, 240, 241, .5);
+$blackBg: #0f141f;
 
 
 // General settings
@@ -237,6 +238,7 @@ nav {
     
                     &:active{
                         background: $blue;
+                        transform: scale(1.5);
                     }
                 }
             }
@@ -261,8 +263,72 @@ nav {
         }
 
         .demo{
-            
+            display: grid;
+            grid-template-columns: 60% auto;
+            column-gap: 1.3em;
+            width: 75%;
+            margin: 2em auto;
+
+            .sqr{
+                width: 100%;
+                background-color: $bg;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2em 0;
+            }
+
+            .elems{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+
+                .elem{
+                    background-color: $bgCard;
+                    padding-left: 15px;
+                    width: 90%;
+                    height: 20%;
+                    position: relative;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    z-index: 1;
+                    font-size: 20px;
+                    
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 3px;
+                        background-color: $LBlue;
+                        z-index: -1;
+                        transition: .3s ease-in-out;
+                    }
+
+                    &:hover{
+                        color: white;
+                    }
+
+                    &:hover:before{
+                        width: 100%;
+                    }
+                
+                }
+            }
         }
+
     }
 
+}
+
+
+
+// Footer
+
+.footer{
+    background-color: $blackBg;
 }

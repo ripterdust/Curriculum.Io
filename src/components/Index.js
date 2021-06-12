@@ -8,6 +8,8 @@ export const Index = () => {
             <Hero />
 
             <Features />
+
+            
         </div>
     )
 }
