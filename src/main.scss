@@ -444,6 +444,21 @@ nav {
     }
 }
 
+// List templates
+
+.listTemplates{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .cards{
+        width: 70%;
+        margin-top: 2em;
+    }
+
+
+}
 
 // Footer
 
