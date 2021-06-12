@@ -5,12 +5,14 @@ import { BrowserRouter as Router,
 } from 'react-router-dom';
 import { Error404 } from './components/Error404';
 import { Index } from './components/Index';
-import { Template } from './components/Template';
 
+// Ui components
 import { Navbar } from './components/ui/Navbar';
 import { Footer } from './components/ui/Footer';
+
 // Styles
 import './main.css' 
+import { CategoriesRoutes } from './routers/CategoriesRoutes';
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Index}  />
-        <Route path='/templates/:category?' component={Template} />
+        <Route path='/templates/:category?' component={CategoriesRoutes} />
 
         <Route component={Error404}  />
       </Switch>
