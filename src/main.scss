@@ -3,6 +3,10 @@
 // Variables
 $fontColor: #333;
 $roboto: 'Roboto', sans-serif;
+$LBlue: #2196f3;
+$bg: #ecf0f1;
+$green: #25b869;
+
 
 // General settings
 
@@ -19,12 +23,171 @@ a {
     color: $fontColor;
 }
 
-
+body{
+    background: $bg;
+}
 
 // Navbar
 nav {
-    padding: 2em 1em;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1;
+    background: white;
+    
+    .navActive{
+        transition: .3s;
+        opacity: .6;
+    }
+    .mainLink{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 20px;
+        
+        span{
+            opacity: .8;
+        }
+        .wallet{
+            color: $LBlue;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+   }
+
+    .content{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .home:hover{
+            color: $LBlue;
+        }
+
+        .dropdown{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .menu{
+                cursor: pointer;
+            }
+    
+            .dropdown-content{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                top: 10vh;
+                display: none;
+                background: #fff;
+                border-top: .5px solid rgba(0,0,0,.1);
+                grid-template-columns: 50% auto;
+                column-gap: 1em;
+                padding: 2em 6em;
+
+                .left{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    .title{
+                        width: 100%;
+                        font-size: 20px;  
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1em;
+                        
+                        a{
+                            transition: .1s ease-in-out;
+
+                            &:hover{
+                                color: $LBlue;
+                            }
+                        }
+
+                        .all{
+                            color: $LBlue;
+                            font-size: 16px;
+                            padding: 3px .5em;
+                            border-radius: 7px; 
+
+                            &:hover{
+                                background-color: $LBlue;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .categories{
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        column-gap: 1em;
+                        width: 100%;
+                        padding: .5em;
+                        border-top: 1px solid rgba(0,0,0,.05);
+
+                        .cat{
+                            display: flex;
+                            flex-direction: column;
+                            .title{
+                                display: flex;
+                                justify-content: left;
+                                font-size: 17px;
+                                align-items: center;
+
+                                i{
+                                    margin-right: .5em;
+                                    font-size: 25px;
+                                    color: $LBlue;
+                                }
+                                &:hover{
+                                    color: $LBlue;
+                                }
+                            }
+
+                            .description{
+                                margin-left: 2em;
+                                text-align: justify;
+                                font-size: 15px;
+                                opacity: .5;
+                            }
+                        }
+                    }
+                }
+
+                .right{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        height: 50vh;
+                    }
+                }
+
+                
+            }
+            &:hover .menu{
+                color: $LBlue;
+            }
+            
+            &:hover .dropdown-content{
+                display: grid;
+
+            }
+        }
+
+
+    }
+
 }
