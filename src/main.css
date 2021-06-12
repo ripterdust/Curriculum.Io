@@ -266,6 +266,52 @@ nav .content .dropdown:hover .dropdown-content {
   width: 100%;
 }
 
+.HeroCategories {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: -1;
+  position: relative;
+}
+.HeroCategories .text {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.HeroCategories .text .title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.HeroCategories .text .descriptionTemplate {
+  width: 70%;
+  text-align: center;
+  opacity: 0.8;
+  z-index: 0;
+  position: relative;
+}
+.HeroCategories .text .btn {
+  margin-top: 1em;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 1em;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.templatesNav {
+  background-color: #fff;
+}
+
 .footer {
   background-color: #0f141f;
 }

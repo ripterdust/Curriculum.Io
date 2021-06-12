@@ -327,6 +327,61 @@ nav {
 
 }
 
+// Hero Categories
+
+.HeroCategories{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: -1;
+    position: relative;
+
+    .text{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+
+        .title{
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        .descriptionTemplate{
+            width: 70%;
+            text-align: center;
+            opacity: .8;
+            z-index: 0;
+            position: relative;
+        }
+        .btn{
+            margin-top: 1em;
+            background-color: $LBlue;
+            color: #fff;
+            padding: 1em;
+            font-size: 20px;
+            border-radius: 5px;
+
+        }        
+    }
+
+
+}
+
+// Templates nav
+.templatesNav{
+    background-color: #fff;
+    
+}
 
 
 // Footer

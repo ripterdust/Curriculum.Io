@@ -21,7 +21,7 @@ export const NavbarOptions = () => {
                         Clean, straightforward templates aiming to keep the focus on your letter’s writing and content
                     </div>
                 </Link>
-                <Link className="cat" to='/templates/pro'>
+                <Link className="cat" to='/templates/professional'>
                     <div className="title"><i className="lni lni-briefcase"></i>Profesional</div>
                     <div className="description">
                     Polished designs to help you highlight your knowledge and expertise in formal fields
