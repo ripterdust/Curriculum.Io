@@ -6,8 +6,10 @@ import { CreateResume } from '../components/AppComponents/CreateResume';
 
 export const AppRouter = () => {
 
-    return <Switch>
-        <Route exact to="/" component={AppTemplates} />
-        <Route exact to="/app/:id" component={CreateResume} />
-    </Switch>
+    return <>
+        <Switch>
+            <Route exact path='/app' component={AppTemplates} />
+            <Route path='/app/:id' component={CreateResume} />
+        </Switch>
+    </>
 }

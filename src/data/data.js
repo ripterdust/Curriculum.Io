@@ -1,23 +1,23 @@
 export const data = [
     {
         id: 1,
-        img: 'Acá irá el enlace',
+        img: 'https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg',
         title: 'Título de la plantilla',
         category: 'creative'
     },{
-        img: 'Acá irá el enlace',
+        img: 'https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg',
         title: 'Título de la plantilla',
         category: 'modern'
     },{
-        img: 'Acá irá el enlace',
+        img: 'https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg',
         title: 'Título de la plantilla',
         category: 'simple'
     },{
-        img: 'Acá irá el enlace',
+        img: 'https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg',
         title: 'Título de la plantilla',
         category: 'professional'
     },{
-        img: 'Acá irá el enlace',
+        img: 'https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg',
         title: 'Título de la plantilla',
         category: 'modern'
     },

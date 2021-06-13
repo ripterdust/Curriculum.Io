@@ -1,11 +1,15 @@
 import React from 'react'
+import { data } from '../../data/data';
+import { useFilter } from '../../hooks/useFilter';
+import { ResumeItem } from './ResumeItem';
 
 export const AppTemplates = () => {
 
-    console.log('Tempaltes app')
+    const [list] = useFilter({data})
+
     return (
-        <div>
-            Acá irá una lista de todas las plantillas
+        <div className="SlideShow">
+            {list.map((el, i) => <div className="card" key={i} ><ResumeItem data={el} /></div> )}
         </div>
     )
 }

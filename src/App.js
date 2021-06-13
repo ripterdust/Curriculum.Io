@@ -24,6 +24,7 @@ function App() {
         <Route exact path="/" component={Index}  />
         <Route path='/templates' component={CategoriesRoutes} />
         <Route path='/app' component={AppRouter} />
+        
         <Route component={Error404}  />
       </Switch>
 
