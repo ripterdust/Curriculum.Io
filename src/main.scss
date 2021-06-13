@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 // Variables
 $fontColor: #333;
 $roboto: 'Roboto', sans-serif;
@@ -524,38 +524,11 @@ nav {
 }
 
 
-// Carousel styles
-.carousel{
-    width: 100%;
-    background-color: #fff;
-    position: relative;
-    min-height: 20vh;
-    
-    .card{
-        display: none;
-    }
+// Slideshow
 
-    .prev, .next{
-        position: absolute;
-        cursor: pointer;
-        top: 50%;
-        background-color: $LBlue;
-        font-size: 20px;
-        color: #fff;
-        border: none;
-        width: 2em;
-        height: 2em;
-        border-radius: 5px;
-        transform: translateY(-50%);
-        
-    }
-    .prev {
-        left: 1em;
-    }
-    .next{
-        right: 1em;
-    }
-}
+
+
+
 
 // Footer
 
