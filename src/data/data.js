@@ -1,5 +1,6 @@
 export const data = [
     {
+        id: 1,
         img: 'Acá irá el enlace',
         title: 'Título de la plantilla',
         category: 'creative'

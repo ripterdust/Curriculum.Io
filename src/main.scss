@@ -459,6 +459,7 @@ nav {
         grid-template-columns: auto auto auto;
         row-gap: 1em;
         column-gap: 1em;
+
         .cardElem{
             width: 100%;
             position: relative;
@@ -477,7 +478,7 @@ nav {
                     background-color: rgba(0,0,0,.02);
                     transition: .3s ease-in-out;
                     opacity: 0;
-                    a{
+                    .a{
                         color: #fff;
                         background-color: $LBlue;
                         padding: 1em 2em;
@@ -499,8 +500,23 @@ nav {
                 align-items: center;
                 position: relative;
                 img{
-                    
                     height: 100%;
+                }
+            }
+            
+            &:hover .title, &:hover .description{
+                color: $LBlue;
+            }
+            .text{
+                background-color: #fff;
+                padding: 1em;
+                .title{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                .description{
+                    opacity: .8;
                 }
             }
         }

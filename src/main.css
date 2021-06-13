@@ -410,7 +410,7 @@ nav .content .dropdown:hover .dropdown-content {
   transition: 0.3s ease-in-out;
   opacity: 0;
 }
-.listTemplates .cardList .cardElem .img .overlay a {
+.listTemplates .cardList .cardElem .img .overlay .a {
   color: #fff;
   background-color: #2196f3;
   padding: 1em 2em;
@@ -422,6 +422,20 @@ nav .content .dropdown:hover .dropdown-content {
 }
 .listTemplates .cardList .cardElem .img img {
   height: 100%;
+}
+.listTemplates .cardList .cardElem:hover .title, .listTemplates .cardList .cardElem:hover .description {
+  color: #2196f3;
+}
+.listTemplates .cardList .cardElem .text {
+  background-color: #fff;
+  padding: 1em;
+}
+.listTemplates .cardList .cardElem .text .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.listTemplates .cardList .cardElem .text .description {
+  opacity: 0.8;
 }
 
 .footer {
