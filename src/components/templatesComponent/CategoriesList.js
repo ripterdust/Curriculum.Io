@@ -17,7 +17,7 @@ export const CategoriesList = ({ category }) => {
                                 <div className="overlay">
                                     <div className="a" to={`/app/template/${el.id}`}>Use Template</div>
                                 </div>
-                                <img src='https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg' alt={`Tempalte of ${i}`} />
+                                <img src={el.img} alt={`Tempalte of ${i}`} />
                             </div>
                             
                             <div className="text">

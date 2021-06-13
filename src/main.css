@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+@import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 1;
+  z-index: 9999;
   background: white;
 }
 nav .navActive {
@@ -67,6 +67,7 @@ nav .content .dropdown .menu {
   cursor: pointer;
 }
 nav .content .dropdown .dropdown-content {
+  z-index: 999;
   position: absolute;
   left: 0;
   width: 100%;
@@ -275,7 +276,6 @@ nav .content .dropdown:hover .dropdown-content {
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
-  z-index: -1;
   position: relative;
 }
 .HeroCategories .text {
@@ -307,6 +307,10 @@ nav .content .dropdown:hover .dropdown-content {
   padding: 1em;
   font-size: 20px;
   border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.HeroCategories .text:hover .btn {
+  transform: scale(1.05);
 }
 
 .templatesNav {
@@ -437,6 +441,55 @@ nav .content .dropdown:hover .dropdown-content {
 }
 .listTemplates .cardList .cardElem .text .description {
   opacity: 0.8;
+}
+
+.titleSlide {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.carousel {
+  padding: 2em 0;
+  z-index: 0;
+  position: relative;
+  z-index: 1;
+}
+.carousel .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  flex-direction: column;
+  z-index: 1;
+}
+.carousel .card:hover a, .carousel .card:hover .title {
+  transform: scale(1.1);
+}
+.carousel .card .title {
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.9;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 1em;
+  transition: 0.3s ease-in-out;
+}
+.carousel .card img {
+  width: 20em;
+}
+.carousel .card a {
+  position: absolute;
+  background-color: #2196f3;
+  padding: 1em;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .footer {

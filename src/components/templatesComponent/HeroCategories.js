@@ -14,7 +14,7 @@ export const HeroCategories = ({ category }) => {
                     resume rules” hiring managers look for. Stand out and get 
                     hired faster with field-tested resume templates.
                 </div>
-                <Link to="/create/" className="btn" >Create my resume now</Link>
+                <Link to="/app/" className="btn" >Create my resume now</Link>
             </div>
         </div>
     )

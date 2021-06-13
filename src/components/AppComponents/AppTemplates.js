@@ -9,21 +9,28 @@ export const AppTemplates = () => {
 
 
     const [list] = useFilter({data})
+    const options= {
+        type      : 'loop',
+        perPage   : 3,
+        perMove   : 1,
+        gap       : '1rem',
+        pagination: false,
+        focus     : 'center',
 
-    return <Splide
-        option={{
-            rewind : true,
-            perPage: 2,
-			perMove: 1,
-            gap: '1rem'
-        }}
-        onMoved={ ( splide, newIndex ) => {  } }
-    >
-         {
-            list.map((el, i) => <SplideSlide key={i} > 
-                <ResumeItem data={el} />
-            </SplideSlide> )
-        }
+    }
+    return <div >
 
-    </Splide>
+        <Splide
+            className='carousel'
+            options={options}
+            onMoved={ ( splide, newIndex ) => {  } }
+        >
+            {
+                list.map((el, i) => <SplideSlide key={i} > 
+                    <ResumeItem data={el} />
+                </SplideSlide> )
+            }
+
+        </Splide>
+    </div>
 }
