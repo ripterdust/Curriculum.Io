@@ -13,6 +13,7 @@ import { Footer } from './components/ui/Footer';
 // Styles
 import './main.css' 
 import { CategoriesRoutes } from './routers/CategoriesRoutes';
+import { AppRouter } from './routers/AppRouter';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Index}  />
         <Route path='/templates' component={CategoriesRoutes} />
-
+        <Route path='/app' component={AppRouter} />
         <Route component={Error404}  />
       </Switch>
 

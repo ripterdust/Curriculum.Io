@@ -15,7 +15,7 @@ export const CategoriesList = ({ category }) => {
                         <Link to={`/app/${i}`} className="cardElem" key={i} >
                             <div className="img">
                                 <div className="overlay">
-                                    <div className="a" to="/app/:id">Use Template</div>
+                                    <div className="a" to={`/app/template/${el.id}`}>Use Template</div>
                                 </div>
                                 <img src='https://s3.resume.io/uploads/local_template_image/image/147/persistent-resource/madrid-resume-templates.jpg' alt={`Tempalte of ${i}`} />
                             </div>
