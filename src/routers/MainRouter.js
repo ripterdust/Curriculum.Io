@@ -11,6 +11,9 @@ import { Navbar } from '../components/ui/Navbar';
 import { Footer } from '../components/ui/Footer';
 import { Error404 } from '../components/Error404';
 
+
+// Styles
+import '../main.css' 
 export const MainRouter = () => {
     return <>
         <Navbar />
