@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useRedirect } from '../../routers/useRedirect';
 
 export const CreateForm = () => {
 
     // React-router-dom hooks
     const {id} = useParams();
-    const history = useHistory();
+
     // UseState
     const [data, setData] = useState({id: id});
+
+    // Use redirect
+    const [ push ] = useRedirect(data);
 
     // Change state 
     const handleInputs = (e) => {
@@ -17,12 +21,8 @@ export const CreateForm = () => {
     // Send data
     const handleSumbit = (e) => {
         e.preventDefault();
-        // Destructuriying state
-        let { id, name, profession} = data;
-
-        // Sending data as params
-        history.push(`/pdf/${id}/${name}/${profession}`);
-
+        
+        push();
     }
 
     return (<form onSubmit={handleSumbit} onChange={handleInputs} action='/'>
