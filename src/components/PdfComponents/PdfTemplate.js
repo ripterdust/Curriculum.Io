@@ -1,6 +1,8 @@
-import React from 'react'
-
+import React, { createRef } from 'react'
+import Pdf from 'react-to-pdf';
 export const PdfTemplate = ({ data }) => {
+
+    const ref = createRef();
 
     // Destructuring params
     const {
@@ -17,7 +19,7 @@ export const PdfTemplate = ({ data }) => {
 
     // Creating template
     return <>
-        <div className={`template${id}`}>
+        <div className={`template${id}`} ref={ref}>
             <div className="hero">
                 <div className="name"> {name} </div>
                 <div className="profession">
@@ -47,6 +49,10 @@ export const PdfTemplate = ({ data }) => {
                 </div>
             </div>
         </div>
-        
+        <Pdf targetRef={ref} >
+            {
+                ({toPdf}) => <button onClick={toPdf}>Capture as PDF</button>
+            }
+        </Pdf>
     </> 
 }
