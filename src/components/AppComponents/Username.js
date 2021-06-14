@@ -21,7 +21,7 @@ export const Username = () => {
 
     const handleForm = () => {
         
-        history.push(`/app/${id}/career`);
+        history.push(`/app/${id}/carrer`);
     }
 
     return <div className="form" >
@@ -40,7 +40,7 @@ export const Username = () => {
             />
         </div>
         
-        <button onClick={handleForm}></button>
+        <button onClick={handleForm}>Next step</button>
 
     </div>
 

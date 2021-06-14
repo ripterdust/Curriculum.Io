@@ -9,7 +9,10 @@ export const AppRouter = () => {
     return <>
         <Switch>
             <Route exact path='/app' component={AppTemplates} />
-            <Route path='/app/:id' component={CreateResume} />
+            <Route exact path='/app/:id/' component={CreateResume} />
+            <Route exact path='/app/:id/carrer/'>
+                Acá no hay ni verdura
+            </Route>
         </Switch>
     </>
 }
