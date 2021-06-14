@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useHistory, useParams } from 'react-router-dom';
 
 export const CreateForm = () => {
 
@@ -8,11 +8,7 @@ export const CreateForm = () => {
     const history = useHistory();
 
     // UseState
-    const [data, setData] = useState({
-        id: id,
-        name: '',
-        profession: ''
-    });
+    const [data, setData] = useState({id});
 
     // Change state 
     const handleInputs = (e) => {
@@ -22,6 +18,7 @@ export const CreateForm = () => {
     // Send data
     const handleSumbit = (e) => {
         e.preventDefault();
+        console.log(data)
         // Destructuriying state
         let { id, name, profession} = data;
 
@@ -30,24 +27,40 @@ export const CreateForm = () => {
 
     }
 
-    return (<form onSubmit={handleSumbit} action='/'>
+    return (<form onSubmit={handleSumbit} onChange={handleInputs} action='/'>
             <div className="personalData">
                 {/* Name information */}
                 <input 
                 type="text" 
                 name='name' 
                 onChange={handleInputs} 
-                placeholder="Full name" />
+                placeholder="Full name" required />
                 {/* Profession */}
                 <input type="text" 
                 name='profession' 
                 onChange={handleInputs} 
-                placeholder="Profession" />
+                placeholder="Profession" required />
 
+                {/* Contact Data */}
+                <input 
+                type="email"  
+                name='email'
+                placeholder="E-mail"
+                required/>
 
+                {/* Phone */}
+                <input 
+                type="text" 
+                name='phone' 
+                placeholder="Phone"
+                required/>
 
             </div>
             <div className="workInfo">
+
+            </div>
+
+            <div className="scolarship">
 
             </div>
 

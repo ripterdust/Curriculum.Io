@@ -616,6 +616,12 @@ nav {
         grid-template-columns: auto auto;
         margin-top: 1em;
         background-color: $bg;
+
+        input{
+            &:focus{
+                outline: none;
+            }
+        }
     }
 }
 

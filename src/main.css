@@ -522,6 +522,9 @@ nav .content .dropdown:hover .dropdown-content {
   margin-top: 1em;
   background-color: #ecf0f1;
 }
+.data form input:focus {
+  outline: none;
+}
 
 .footer {
   background-color: #0f141f;
