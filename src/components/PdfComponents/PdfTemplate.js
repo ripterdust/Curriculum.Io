@@ -1,9 +1,8 @@
 import React, { createRef } from 'react'
 import Pdf from 'react-to-pdf';
 
-
 // Styles
-
+import './templateStyles.css';
 
 export const PdfTemplate = ({ data }) => {
 
