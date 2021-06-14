@@ -1,5 +1,10 @@
 import React, { createRef } from 'react'
 import Pdf from 'react-to-pdf';
+
+
+// Styles
+
+
 export const PdfTemplate = ({ data }) => {
 
     const ref = createRef();
@@ -49,7 +54,7 @@ export const PdfTemplate = ({ data }) => {
                 </div>
             </div>
         </div>
-        <Pdf targetRef={ref} >
+        <Pdf targetRef={ref} filename={`Resume_of_${name}`}>
             {
                 ({toPdf}) => <button onClick={toPdf}>Capture as PDF</button>
             }
