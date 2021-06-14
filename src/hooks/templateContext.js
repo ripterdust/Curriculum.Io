@@ -1,3 +1,5 @@
-import React, { createContext } from 'react'
+import React, { createContext } from 'react';
 
-const template = createContext();
+export const TemplateContext = createContext({
+    id: 0
+});
