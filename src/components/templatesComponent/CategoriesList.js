@@ -1,7 +1,7 @@
-import React from 'react'
-import { data } from '../../data/data'
-import { useFilter } from '../../hooks/useFilter'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { data } from '../../data/data';
+import { useFilter } from '../../hooks/useFilter';
+import { Link } from 'react-router-dom';
 export const CategoriesList = ({ category }) => {
 
     const [list] = useFilter({data, category});
