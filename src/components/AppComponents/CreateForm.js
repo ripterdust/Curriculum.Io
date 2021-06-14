@@ -39,24 +39,33 @@ export const CreateForm = () => {
                         placeholder="Full name" required />
                     </div>
                     {/* Profession */}
-                    <input type="text" 
-                    name='profession' 
-                    onChange={handleInputs} 
-                    placeholder="Profession" required />
+                    <div className="inputDiv">
+                        <span className="title">Profession:</span>
+                        <input type="text" 
+                        name='profession' 
+                        onChange={handleInputs} 
+                        placeholder="Profession" required />
+                    </div>
 
                     {/* Contact Data */}
-                    <input 
-                    type="email"  
-                    name='email'
-                    placeholder="E-mail"
-                    required/>
+                    <div className="inputDiv">
+                        <span className="title">E-mail:</span>
+                        <input 
+                        type="email"  
+                        name='email'
+                        placeholder="E-mail"
+                        required/>
+                    </div>
 
                     {/* Phone */}
-                    <input 
-                    type="text" 
-                    name='phone' 
-                    placeholder="Phone"
-                    required/>
+                    <div className="inputDiv">
+                        <span className="title">Phone number:</span>
+                        <input 
+                        type="text" 
+                        name='phone' 
+                        placeholder="Phone"
+                        required/>
+                    </div>
 
                 </div>
                 <div className="workInfo">
@@ -93,11 +102,8 @@ export const CreateForm = () => {
                     required
                     />
                 </div>
-
+                <input type="submit" className="sendBtn" value="Create" />
             </div>
-
-
-            <input type="submit" value="Send data" />
     </form>
     )
 }
