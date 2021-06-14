@@ -611,16 +611,16 @@ nav {
 
 
     form{
-        width: 70%;
-        display: grid;
-        grid-template-columns: auto auto;
+        width: 75%;
         margin-top: 1em;
         background-color: $bg;
 
-        input{
-            &:focus{
-                outline: none;
-            }
+        .inputs{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 1em;
+            padding: 1em;
+
         }
     }
 }

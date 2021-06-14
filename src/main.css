@@ -516,14 +516,15 @@ nav .content .dropdown:hover .dropdown-content {
   opacity: 0.8;
 }
 .data form {
-  width: 70%;
-  display: grid;
-  grid-template-columns: auto auto;
+  width: 75%;
   margin-top: 1em;
   background-color: #ecf0f1;
 }
-.data form input:focus {
-  outline: none;
+.data form .inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1em;
+  padding: 1em;
 }
 
 .footer {
