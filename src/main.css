@@ -497,6 +497,8 @@ nav .content .dropdown:hover .dropdown-content {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fff;
+  height: 70vh;
 }
 .data .text {
   margin-top: 2em;

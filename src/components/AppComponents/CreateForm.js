@@ -11,8 +11,7 @@ export const CreateForm = () => {
     const [data, setData] = useState({
         id: id,
         name: '',
-        lastName: '',
-        description: ''
+        profession: ''
     });
 
     // Change state 
@@ -22,14 +21,31 @@ export const CreateForm = () => {
 
     // Send data
     const sendData = () => {
-        console.log(data)
+        let { id, name, profession} = data;
+        history.push(`/pdf/${id}/${name}/${profession}`)
     }
     return (
         <div>
-            <input type="text" name='name' onChange={handleInputs} />
-            <input type="text" name='lastName' onChange={handleInputs} />
-            <input type="text" name='description' onChange={handleInputs} />
-            <button onClick={sendData}>Send Data</button>
+            <div className="personalData">
+                {/* Name information */}
+                <input 
+                type="text" 
+                name='name' 
+                onChange={handleInputs} 
+                placeholder="Full name" />
+                {/* Profession */}
+                <input type="text" 
+                name='profession' 
+                onChange={handleInputs} 
+                placeholder="Profession" />
+
+
+                {/* Send data information */}
+                <button onClick={sendData}>Send Data</button>
+            </div>
+            <div className="workInfo">
+
+            </div>
         </div>
     )
 }
