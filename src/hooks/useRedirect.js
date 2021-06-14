@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useHistory } from "react-router-dom";
 
 export const useRedirect = ({data}) => {
-    const [ urlData , setState ] = useState(data)
+    const [ , setState ] = useState(data)
     const history = useHistory()
 
     const push = (inf) => {

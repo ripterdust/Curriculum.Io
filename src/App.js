@@ -15,7 +15,7 @@ function App() {
   return <Router>
 
       <Switch>
-        <Route path="/pdf" component={PdfMaker} />
+        <Route exact path="/pdf/:id/:name/:profession/:email/:phone/:enterprise/:job/:university/:grade" component={PdfMaker} />
         <Route path='/' component={MainRouter} />
       </Switch>
 
