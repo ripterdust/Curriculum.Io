@@ -313,6 +313,11 @@ nav .content .dropdown:hover .dropdown-content {
   transform: scale(1.05);
 }
 
+.form {
+  height: 80vh;
+  width: 100%;
+}
+
 .templatesNav {
   background-color: #fff;
   display: flex;

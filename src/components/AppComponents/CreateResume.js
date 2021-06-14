@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { TemplateContext } from '../../hooks/templateContext';
 import { templates } from '../../data/templatesData';
+import { Username } from './Username';
 
 export const CreateResume = () => {
 
@@ -20,7 +21,7 @@ export const CreateResume = () => {
     
     return (
         <TemplateContext.Provider value={template}>
-            { template.id }
+            <Username />    
         </TemplateContext.Provider>
     )
 }
