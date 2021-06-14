@@ -21,6 +21,13 @@ export const PdfTemplate = ({ data }) => {
         grade
     } = data;
 
+    // Pdf options
+
+    const options = {
+        orientation: 'portrait',
+        unit: 'in'
+    }
+
     // Creating template
     return <>
         <div className={`template${id}`} ref={ref}>
@@ -53,9 +60,9 @@ export const PdfTemplate = ({ data }) => {
                 </div>
             </div>
         </div>
-        <Pdf targetRef={ref} filename={`Resume_of_${name}`}>
+        <Pdf targetRef={ref} filename={`Resume_of_${name}`} options={options} >
             {
-                ({toPdf}) => <button onClick={toPdf}>Capture as PDF</button>
+                ({toPdf}) => <button onClick={toPdf} className="btnPdf">Capture as PDF</button>
             }
         </Pdf>
     </> 

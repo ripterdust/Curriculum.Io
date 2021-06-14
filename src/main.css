@@ -618,4 +618,8 @@ nav .content .dropdown:hover .dropdown-content {
   text-transform: uppercase;
 }
 
+.btnPdf {
+  position: absolute;
+}
+
 /*# sourceMappingURL=main.css.map */
