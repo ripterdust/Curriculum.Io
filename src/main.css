@@ -515,6 +515,13 @@ nav .content .dropdown:hover .dropdown-content {
   margin-bottom: 1em;
   opacity: 0.8;
 }
+.data form {
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 1em;
+  background-color: #ecf0f1;
+}
 
 .footer {
   background-color: #0f141f;

@@ -608,6 +608,15 @@ nav {
         }
         
     }
+
+
+    form{
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 1em;
+        background-color: $bg;
+    }
 }
 
 // Footer

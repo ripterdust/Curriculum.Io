@@ -20,12 +20,17 @@ export const CreateForm = () => {
     }
 
     // Send data
-    const sendData = () => {
+    const handleSumbit = (e) => {
+        e.preventDefault();
+        // Destructuriying state
         let { id, name, profession} = data;
-        history.push(`/pdf/${id}/${name}/${profession}`)
+
+        // Sending data as params
+        history.push(`/pdf/${id}/${name}/${profession}`);
+
     }
-    return (
-        <div>
+
+    return (<form onSubmit={handleSumbit} action='/'>
             <div className="personalData">
                 {/* Name information */}
                 <input 
@@ -40,12 +45,14 @@ export const CreateForm = () => {
                 placeholder="Profession" />
 
 
-                {/* Send data information */}
-                <button onClick={sendData}>Send Data</button>
+
             </div>
             <div className="workInfo">
 
             </div>
-        </div>
+
+
+            <input type="submit" value="Send data" />
+    </form>
     )
 }
