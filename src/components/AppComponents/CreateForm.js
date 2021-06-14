@@ -69,38 +69,42 @@ export const CreateForm = () => {
 
                 </div>
                 <div className="workInfo">
-                    <span>Laboral data</span>
-                    <input type="text" 
-                    name='Enterprise' 
-                    placeholder="Enterprise" 
-                    required/>
-                    <input type="text" 
-                    name='jobTitle'
-                    placeholder="Job Title"
-                    required
-                    />
+                    <span className="sectionTitle">Laboral data</span>
+
+                    <div className="inputDiv">
+                        <span className="title">Enterprise:</span>
+                        <input type="text" 
+                        name='Enterprise' 
+                        placeholder="Enterprise" 
+                        required/>
+                    </div>
+                    <div className="inputDiv">
+                        <span className="title">Job Title:</span>
+                        <input type="text" 
+                        name='jobTitle'
+                        placeholder="Job Title"
+                        required
+                        />
+                    </div>
                 </div>
 
                 <div className="scolarship">
-                    <span>Scolarship</span>
-                    <input type="text" 
-                    name='university' 
-                    placeholder="University name" 
-                    required/>
-                    <input type="text" 
-                    name='jobTitle'
-                    placeholder="Job Title"
-                    required
-                    />
-                    <input type="text" 
-                    name='grade' 
-                    placeholder="Grade" 
-                    required/>
-                    <input type="text" 
-                    name='jobTitle'
-                    placeholder="Job Title"
-                    required
-                    />
+                    <span className="sectionTitle">Scolarship</span>
+                    <div className="inputDiv">
+                        <span className="title">University: </span>
+                        <input type="text" 
+                        name='university' 
+                        placeholder="University name" 
+                        required/>
+                    </div>
+                    <div className="inputDiv">
+                        <span className="title">Carrer:</span>
+                        <input type="text" 
+                        name='grade' 
+                        placeholder="Grade" 
+                        required/>
+                    </div>
+                
                 </div>
                 <input type="submit" className="sendBtn" value="Create" />
             </div>
