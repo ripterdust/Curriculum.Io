@@ -498,7 +498,7 @@ nav .content .dropdown:hover .dropdown-content {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  height: 70vh;
+  padding: 1em 0;
 }
 .data .text {
   margin-top: 2em;
@@ -525,6 +525,39 @@ nav .content .dropdown:hover .dropdown-content {
   grid-template-columns: auto auto;
   column-gap: 1em;
   padding: 1em;
+}
+.data form .inputs div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.data form .inputs div .sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1em 0;
+  height: 10vh;
+  color: #2196f3;
+  position: relative;
+}
+.data form .inputs div input {
+  background-color: #ecf0f1;
+  font-size: 15px;
+}
+.data form .inputs div input:focus {
+  outline: none;
+}
+.data form .inputs .inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.data form .inputs .inputDiv span {
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: 1em;
 }
 
 .footer {

@@ -28,13 +28,16 @@ export const CreateForm = () => {
     return (<form onSubmit={handleSumbit} onChange={handleInputs} action='/'>
             <div className="inputs">
                 <div className="personalData">
-                    <span>Personal data</span>
+                    <span className="sectionTitle">Personal data</span>
                     {/* Name information */}
-                    <input 
-                    type="text" 
-                    name='name' 
-                    onChange={handleInputs} 
-                    placeholder="Full name" required />
+                    <div className="inputDiv">
+                        <span className="title">Full Name: </span>
+                        <input 
+                        type="text" 
+                        name='name' 
+                        onChange={handleInputs} 
+                        placeholder="Full name" required />
+                    </div>
                     {/* Profession */}
                     <input type="text" 
                     name='profession' 
@@ -70,8 +73,8 @@ export const CreateForm = () => {
                 </div>
 
                 <div className="scolarship">
-                <span>Scolarship</span>
-                |<input type="text" 
+                    <span>Scolarship</span>
+                    <input type="text" 
                     name='university' 
                     placeholder="University name" 
                     required/>

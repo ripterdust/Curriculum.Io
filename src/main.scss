@@ -589,7 +589,7 @@ nav {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    height: 70vh;
+    padding: 1em 0;
     .text{
         margin-top: 2em;
         text-align: center;
@@ -620,6 +620,44 @@ nav {
             grid-template-columns: auto auto;
             column-gap: 1em;
             padding: 1em;
+            
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .sectionTitle{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 1em 0;
+                    height: 10vh;
+                    color: $LBlue;
+                    position: relative;
+                }
+
+                input{
+                    background-color: $bg;
+                    font-size: 15px;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+            }
+            .inputDiv{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                span{
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-right: 1em;
+                }
+            }
 
         }
     }
