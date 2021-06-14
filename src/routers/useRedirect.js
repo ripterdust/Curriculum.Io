@@ -9,7 +9,7 @@ export const useRedirect = ({data}) => {
         setState(inf);
         let { id, name, profession, email, phone, enterprise, jobTitle, university, grade } = inf;
         let url = `/pdf/${id}/${name}/${profession}/${email}/${phone}/${enterprise}/${jobTitle}/${university}/${grade}`;
-        history.push(url)
+        history.push(url);
     }
 
     return [push];
