@@ -21,11 +21,10 @@ export const CreateForm = () => {
     // Send data
     const handleSumbit = (e) => {
         e.preventDefault();
-        
-        push();
+        push(data);
     }
 
-    return (<form onSubmit={handleSumbit} onChange={handleInputs} action='/'>
+    return (<form onSubmit={handleSumbit}  action='/'>
             <div className="inputs">
                 <div className="personalData">
                     <span className="sectionTitle">Personal data</span>
@@ -54,6 +53,7 @@ export const CreateForm = () => {
                         type="email"  
                         name='email'
                         placeholder="E-mail"
+                        onChange={handleInputs} 
                         required/>
                     </div>
 
@@ -64,6 +64,7 @@ export const CreateForm = () => {
                         type="text" 
                         name='phone' 
                         placeholder="Phone"
+                        onChange={handleInputs} 
                         required/>
                     </div>
 
@@ -74,8 +75,9 @@ export const CreateForm = () => {
                     <div className="inputDiv">
                         <span className="title">Enterprise:</span>
                         <input type="text" 
-                        name='Enterprise' 
+                        name='enterprise' 
                         placeholder="Enterprise" 
+                        onChange={handleInputs} 
                         required/>
                     </div>
                     <div className="inputDiv">
@@ -83,6 +85,7 @@ export const CreateForm = () => {
                         <input type="text" 
                         name='jobTitle'
                         placeholder="Job Title"
+                        onChange={handleInputs} 
                         required
                         />
                     </div>
@@ -95,6 +98,7 @@ export const CreateForm = () => {
                         <input type="text" 
                         name='university' 
                         placeholder="University name" 
+                        onChange={handleInputs} 
                         required/>
                     </div>
                     <div className="inputDiv">
@@ -102,6 +106,7 @@ export const CreateForm = () => {
                         <input type="text" 
                         name='grade' 
                         placeholder="Grade" 
+                        onChange={handleInputs} 
                         required/>
                     </div>
                 
