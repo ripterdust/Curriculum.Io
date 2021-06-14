@@ -3,6 +3,7 @@ import { BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
+import { PdfMaker } from './components/PdfComponents/PdfMaker';
 
 // Styles
 import './main.css' 
@@ -14,11 +15,7 @@ function App() {
   return <Router>
 
       <Switch>
-        <Route path='/pdf' >
-
-        Acá se imprimirán los PDF
-
-        </Route>
+        <Route path="/pdf" component={PdfMaker} />
         <Route path='/' component={MainRouter} />
       </Switch>
 

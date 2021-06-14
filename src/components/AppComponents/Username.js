@@ -7,10 +7,6 @@ export const Username = () => {
 
     const { id } = useParams()
 
-
-    
-    
-
     return <div className="data">
 
         <CreateTitle />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useRedirect } from '../../routers/useRedirect';
+import { useRedirect } from '../../hooks/useRedirect';
 
 export const CreateForm = () => {
 
