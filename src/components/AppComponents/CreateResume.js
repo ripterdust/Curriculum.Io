@@ -1,20 +1,26 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { TemplateContext } from '../../hooks/templateContext';
+import { templates } from '../../data/templatesData';
+
 export const CreateResume = () => {
-    console.log('Create resume')
 
     // Requiring id in params.
     const { id } = useParams();
-
-    const user = {
-        id: 123,
-        name: 'Bryan'
+    let template;
+    for (let i = 0; i < templates.length; i++) {
+        
+        if(templates[i].id === parseInt(id)){
+            template = templates[i];
+            break
+        }
+        
     }
     
+    
     return (
-        <TemplateContext.Provider value={user}>
-            Acá irá toda la info
+        <TemplateContext.Provider value={template}>
+            { template.id }
         </TemplateContext.Provider>
     )
 }

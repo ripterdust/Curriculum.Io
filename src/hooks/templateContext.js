@@ -1,5 +1,3 @@
-import React, { createContext } from 'react';
+import { createContext } from 'react';
 
-export const TemplateContext = createContext({
-    id: 0
-});
+export const TemplateContext = createContext(null);
