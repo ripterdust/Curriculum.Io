@@ -6,27 +6,27 @@ export const CreateForm = () => {
     const {id} = useParams()
 
     const [data, setData] = useState({
-
+        id,
         name: '',
         lastName: '',
         description: ''
     });
 
-
-    const handleName = (e) => {
-        setData(state => ({...state, name:e.target.value}))
-    }
-    const handleLastName = (e) => {
-        setData(state => ({...state, lastName:e.target.value}))
-    }
-    const handleDescription = (e) => {
-        setData(state => ({...state, description:e.target.value}))
+    const handleInputs = (e) => {
+        setData(state => ({...state, [ e.target.name ]: e.target.value}))
+  
     }
 
+    const sendData = () => {
+        console.log(data)
+    }
 
     return (
         <div>
-            Acá irá el formulario
+            <input type="text" name='name' onChange={handleInputs} />
+            <input type="text" name='lastName' onChange={handleInputs} />
+            <input type="text" name='description' onChange={handleInputs} />
+            <button onClick={sendData}>Send Data</button>
         </div>
     )
 }
