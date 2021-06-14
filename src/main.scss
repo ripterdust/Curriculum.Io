@@ -382,14 +382,6 @@ nav {
 }
 
 
-// Data for template
-
-.form{
-    height: 80vh;
-    width: 100%;
-    
-}
-
 // Templates nav
 .templatesNav{
     background-color: #fff;
@@ -588,6 +580,50 @@ nav {
             transition: .3s;
         }
     }
+}
+
+// Data for template
+
+.form{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2em 0;
+
+        input{
+            font-size: 20px;
+            background-color: $bg;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,.4);
+            position: relative;
+
+            &:focus{
+                outline: none;
+            }
+
+            &::before{
+                content: '*';
+                width: 100%;
+                height: 10px;
+                background: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+    }
+
+
 }
 
 // Footer

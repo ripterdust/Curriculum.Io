@@ -27,15 +27,13 @@ export const Username = () => {
     return <div className="form" >
         <div className="name">
             <span>Name</span>
-            <input type="text" value={data.name} 
-            placeholder={data.name}
+            <input type="text" value={data.name}
             onChange={handleName}
             />
         </div>
         <div className="lastName">
             <span>LastName</span>
-            <input type="text" value={data.lastName} 
-            placeholder={data.lastName}
+            <input type="text" value={data.lastName}
             onChange={handleLastName}
             />
         </div>
