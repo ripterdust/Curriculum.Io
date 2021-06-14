@@ -9,7 +9,8 @@ export const Username = () => {
 
     const [data, setData] = useState({
         name: '',
-        lastName: ''
+        lastName: '',
+        description: ''
     })
 
     const handleName = (e) => {
@@ -18,27 +19,25 @@ export const Username = () => {
     const handleLastName = (e) => {
         setData(state => ({...state, lastName:e.target.value}))
     }
+    const handleDescription = (e) => {
+        setData(state => ({...state, description:e.target.value}))
+    }
 
     const handleForm = () => {
         
         history.push(`/app/${id}/carrer`);
     }
 
-    return <div className="form" >
-        <div className="name">
-            <span>Name</span>
-            <input type="text" value={data.name}
-            onChange={handleName}
-            />
+    return <div className="data">
+
+        <div className="text">
+            <div className="title" >
+                Insert your data.
+            </div>
+            <div className="subTitle" >
+                All this information will appear on your resume.
+            </div>
         </div>
-        <div className="lastName">
-            <span>LastName</span>
-            <input type="text" value={data.lastName}
-            onChange={handleLastName}
-            />
-        </div>
-        
-        <button onClick={handleForm}>Next step</button>
 
     </div>
 

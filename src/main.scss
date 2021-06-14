@@ -583,47 +583,29 @@ nav {
 }
 
 // Data for template
-
-.form{
-    height: 80vh;
-    width: 100%;
+.data{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .text{
+        margin-top: 2em;
+        text-align: center;
 
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 2em 0;
-
-        input{
-            font-size: 20px;
-            background-color: $bg;
-            border: none;
-            border-bottom: 1px solid rgba(0,0,0,.4);
-            position: relative;
-
-            &:focus{
-                outline: none;
-            }
-
-            &::before{
-                content: '*';
-                width: 100%;
-                height: 10px;
-                background: #000;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
+        .title{
+            font-weight: 700;
+            text-align: center;
+            width: 100%;
+            font-size: 50px;
         }
 
+        .subTitle{
+            font-size: 20px;
+            margin-bottom: 1em;
+            opacity: .8;
+        }
+        
     }
-
-
 }
 
 // Footer
