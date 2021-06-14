@@ -1,26 +1,29 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 
 export const CreateForm = () => {
 
-    const {id} = useParams()
+    // React-router-dom hooks
+    const {id} = useParams();
+    const history = useHistory();
 
+    // UseState
     const [data, setData] = useState({
-        id,
+        id: id,
         name: '',
         lastName: '',
         description: ''
     });
 
+    // Change state 
     const handleInputs = (e) => {
         setData(state => ({...state, [ e.target.name ]: e.target.value}))
-  
     }
 
+    // Send data
     const sendData = () => {
         console.log(data)
     }
-
     return (
         <div>
             <input type="text" name='name' onChange={handleInputs} />
