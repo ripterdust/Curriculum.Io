@@ -30,7 +30,7 @@ export const PdfTemplate = ({ data }) => {
 
     // Creating template
     return <>
-        <div className={`template${id}`} ref={ref}>
+        <div className={`template${id} pdf`} ref={ref}>
             <div className="hero">
                 <div className="name"> {name} </div>
                 <div className="profession">

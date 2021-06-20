@@ -618,8 +618,69 @@ nav .content .dropdown:hover .dropdown-content {
   text-transform: uppercase;
 }
 
+.pdf {
+  width: 794px;
+  height: 1096px;
+  margin: auto;
+}
+.pdf .hero {
+  background-color: #2196f3;
+  padding: 1em;
+}
+.pdf .hero div {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pdf .hero .name {
+  color: white;
+  font-size: 35px;
+}
+.pdf .hero .profession {
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+.pdf .hero .mail {
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
 .btnPdf {
+  position: sticky;
+  bottom: 20px;
+  left: 50%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  padding: 0.5em 1em;
+  transform: translate(-50%);
+}
+.btnPdf::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #2196f3;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
   position: absolute;
+  z-index: -1;
+  animation: btnAnim 1s linear infinite;
+}
+@keyframes btnAnim {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1.5);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
